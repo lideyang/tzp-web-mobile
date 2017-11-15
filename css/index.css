@@ -1,0 +1,254 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 50px;
+}
+
+body {
+    font-size: 18px;
+    background-color: #f1f0ef;
+}
+
+@font-face {
+    font-family: "icon-font";
+    src: url('../font/iconfont.eot?t=1510730001631'); /* IE9*/
+    src: url('../font/iconfont.eot?t=1510730001631#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAATkAAsAAAAABzQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFZW7kf8Y21hcAAAAYAAAABeAAABhpmABr5nbHlmAAAB4AAAARMAAAEUzUR5EWhlYWQAAAL0AAAALwAAADYPg1gYaGhlYQAAAyQAAAAcAAAAJAfeA4RobXR4AAADQAAAAAwAAAAMC+kAAGxvY2EAAANMAAAACAAAAAgAdgCKbWF4cAAAA1QAAAAfAAAAIAESAF1uYW1lAAADdAAAAUoAAAJ5PNf/ynBvc3QAAATAAAAAIQAAADJvePJ+eJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2Bk/sE4gYGVgYOpk+kMAwNDP4RmfM1gxMjBwMDEwMrMgBUEpLmmMDgwVDwTYm7438AQw9zA0AAUZgTJAQAksgx+eJzFkMENgDAMAy9t6QPx6hQ8GIgXc3TirlFMKA8mqCXHimMpUYAFiOIhJrAL48Ep19yPrO4nz2SpEait9K7+U0U0y65BJTMNNm/1H5vXfXT6CnVQJ7byknADe28L1wAAeJwVj6tOw1AAhs9/Si8bvbDTe7tu68p2IIMmtGWGsBkMBEGCQvIAYGsQMyQIBIoHICRI5MyegDdAEniHuQPlz5fPfeInMiG/X9JKCohNdsgBOSEXhECZYGjSBCmvcjqBm8qu75gSz3iqZsNcOoY/VByvmFZjX1EVCyZ6KNNiynPKcVjN6BEKLwHCOLpkoy6TntAOeO9enNEXuP2sa832xene3CkGtlbrjIWMPWqKLGuUblgmbnyvJbfainiVrchd9XdpH3rIo/MrYxCz64fqNhn5LWCxgB0PzLd5J+o03EWezUJ1y9CCyMi2HdQ/m4GtJ+Nv0gz/oh90TZrXaHIV9LkUn+CleKfrXCzFMkf9Bxs2LnwAeJxjYGRgYADie7OmHojnt/nKwM3CAALXjLgEEfT/hywMzBJALgcDE0gUABlDCM0AeJxjYGRgYG7438AQw8IAAkCSkQEVMAMARwkCbAQAAAAD6QAABAAAAAAAAAAAdgCKeJxjYGRgYGBmCGRgZQABJiDmAkIGhv9gPgMAEPcBcAB4nG2RvU4CQRSFz/JnWKIFRkudRgsNy09jQikJFHYU9LDMLpD9y+xAwiP4PD6DT2Bv5zPYelguFMhu5ua7554zuckAaOIbDvbfDc+eHdTZ7bmEC9wJl6k/CFfInnAVDbwI16i/Crt4xptwA9fY8AanUmf3hHdhhzt8CJdwhU/hMvUv4Qr5R7iKW/wK19B0LoVdTJx74QYenbU7MHpq9VzNtmrpp0mQJtbdQWtHYx2uo6k59keYaJMv00R1vc5RG+lEm8Nd+SbsWRuowKSxGnKqoyhVmUlX2rfewtqs324Hont+GnO1AQw0prCscyjMsGVdwkeKBEFRLX0HpXXUxkyEWCNi2pyZ/1cmTBjknOx6hS6fqXPGN6IvKbyne+V8qBA9qpZuxWOYiUlDyWruE5EVsmK2ouJT97AoUhn6aPMPTvxesUX8Bx1ocJYAAHicY2BigAAuBuyAmZGJkZmRhYGxgiUvtaKEgQEADqoCWAAAAA==') format('woff'),
+    url('../font/iconfont.ttf?t=1510730001631') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../font/iconfont.svg?t=1510730001631#icon-font') format('svg'); /* iOS 4.1- */
+}
+
+.icon-font {
+    font-family: "icon-font" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-next:before {
+    content: "\e612";
+}
+
+/* 页面样式 */
+.body-bg {
+    position: absolute;
+    width: 100%;
+    top: 0.75rem;
+    height: 8.25rem;
+    background-color: #9b8a70;
+    z-index: 0;
+}
+
+.header {
+    height: 0.75rem;
+    line-height: 0.75rem;
+    padding: 0 0.2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo-title {
+    position: relative;
+    height: 0.84rem;
+    line-height: 0.84rem;
+    text-align: center;
+    color: #fff;
+    background-color: #625642;
+}
+
+.logo-title span {
+    margin: 0 .1rem 0 0;
+    color: #ff6f4c;
+}
+
+.header .icon-font {
+    float: left;
+    color: #666;
+    font-size: 0.36rem;
+}
+
+.header h1 {
+    margin: 0;
+    color: #333;
+    font-size: 0.36rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+.content {
+    position: relative;
+    height: 10rem;
+    margin: 0.35rem 0 0;
+}
+
+.content img.banner {
+    width: 100%;
+    display: block;
+}
+
+.content .content-main {
+    margin: -1px .365rem 0;
+    background-color: #fff;
+    box-shadow: 0 0 16px rgba(60,60,60,.45);
+}
+
+.content .reg-form {
+    padding: 0 .3rem;
+    margin: 0 0 20px;
+}
+
+content .reg-form .list {
+    font-size: .3rem;
+}
+
+.content .reg-form .list {
+    position: relative;
+    padding: 0.20rem 0;
+    height: .6rem;
+    line-height: 0.2rem;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.content .reg-form .list label {
+    font-size: 0.3rem;
+    display: inline-block;
+    width: 1.34rem;
+    color: #333;
+}
+
+.content .reg-form .list input {
+    height: .6rem;
+    width: 4rem;
+    margin: 0 0 .1rem;
+}
+
+.content .reg-form .list .btn {
+    position: absolute;
+    right: 0;
+    top: .25rem;
+    border: 1px solid #d1c0a5;
+    background-color: #ece5d9;
+    border-radius: 4px;
+    color: #7c7468;
+    width: 1.56rem;
+    height: .5rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.content .reg-form .agree {
+    margin: .2rem 0 .5rem;
+    font-size: .2rem;
+}
+
+.content .content-info {
+    padding: 0 .3rem .5rem;
+}
+
+.content .content-img {
+    margin: 0 0 .5rem;
+}
+
+.content .table {
+    width: 100%;
+    margin: 0 0 .5rem;
+    border-top: 2px solid #cfa972;
+    border-left: 2px solid #cfa972;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.content .table tr td, .content .table tr th {
+    border-bottom: 2px solid #cfa972;
+    border-right: 2px solid #cfa972;
+    height: 0.6rem;
+}
+
+.content .table tr th {
+    color: #fff;
+    background-color: #c3520b;
+}
+
+.content .table tr th:nth-child(1) {
+    width: 40%;
+}
+
+.content .table tr th:nth-child(2) {
+    width: 30%;
+}
+
+.content .table tr th:nth-child(3) {
+    width: 40%;
+}
+
+.content .table tr td {
+    color: #666;
+}
+
+.content .table tr td:last-child {
+    color: #ed4d11;
+}
+
+.content .table tr:nth-child(2n) td {
+    background-color: #f1efeb;
+}
+
+.content .activity-title, .content .activity-list {
+    color: #8d7857;
+
+}
+
+.content .activity-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 .4rem;
+    line-height: 1.6;
+    border-bottom: 1px solid #d1c0a5;
+}
+
+.content .activity-list li {
+    margin: 0 0 .15rem;
+}
+
+.content .prompt, .content .activity-list {
+    font-size: .3rem;
+    margin: 0 0 .3rem;
+}
+
+.content .prompt {
+    color: #999;
+    text-align: center;
+}
+
+.content .prompt p {
+    margin: 0 0 .15rem;
+    font-size: 14px;
+}
+
+.content .reg-btn, .content .download-btn {
+    display: block;
+    border-radius: 0.5rem;
+    width: 5.4rem;
+    height: .88rem;
+    margin: 0 auto .2rem;
+    padding: 0;
+    border: none;
+    line-height: .88rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.content .reg-btn {
+    background: url(../images/reg_btn_bg.png) no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.content .download-btn {
+    background-color: #fcf8ef;
+    border: 1px solid #ff6f4c;
+    color: #ff562c;
+}
